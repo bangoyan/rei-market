@@ -36,8 +36,6 @@ try {
 
 const nextConfig: NextConfig = {
   /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
   images: {
     remotePatterns: [
       { hostname: "images.unsplash.com" },
@@ -55,3 +53,5 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+import('@opennextjs/cloudflare').then(m => m.initOpenNextCloudflareForDev());

@@ -14,7 +14,7 @@ import { PromoBanner } from "@/components/store/promo-banner";
 import { NewsletterForm } from "@/components/store/newsletter-form";
 import { ProductRow } from "./product-row";
 
-export const instant = false;
+export const dynamic = "force-dynamic";
 
 export default async function HomePage() {
   await connection();

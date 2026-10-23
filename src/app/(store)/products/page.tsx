@@ -2,7 +2,7 @@ import { connection } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { ProductGrid } from "./product-grid";
 
-export const instant = false;
+export const dynamic = "force-dynamic";
 
 interface Props {
   searchParams: Promise<{ search?: string; category?: string; sort?: string; minPrice?: string; maxPrice?: string }>;

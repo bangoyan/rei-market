@@ -3,7 +3,7 @@ import { createClient } from "@/lib/supabase/server";
 import { notFound } from "next/navigation";
 import { ProductDetail } from "./product-detail";
 
-export const instant = false;
+export const dynamic = "force-dynamic";
 
 interface Props {
   params: Promise<{ id: string }>;

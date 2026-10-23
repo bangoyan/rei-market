@@ -5,7 +5,7 @@ import { Package } from "lucide-react";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 
-export const instant = false;
+export const dynamic = "force-dynamic";
 
 const STATUS_COLORS: Record<string, string> = {
   pending: "bg-yellow-100 text-yellow-800",
